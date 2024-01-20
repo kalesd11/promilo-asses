@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+@keyframes login{
+    0% {
+        transform: scaleX(30%);
+    }
+    /* 25% {
+        transform: scale(25%);
+    }
+    50% {
+        transform: scale(50%);
+    } */
+    100% {
+        transform: scaleX(100%);
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login{
+    transition: .5s;
+    animation: 1s login;
+}
+/* .login:hover{
+    transform:rotate3d(1, 0, 0, 20deg);
+} */
+.brand{
+    transition: .9s;
+}
+.brand:hover{
+    transform:rotate3d(1, 1, -1, 25deg) scale(90%);
+    transition: .9s;
+}
+.product-card{
+    transition: .9s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-card:hover{
+    /* transform: scale(90%); */
+    transform: rotate3d(1, 1, -1, 25deg) scale(90%);
+    transition: 0.95s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+    transform: scale(90%);
+    transition: .9s;
 }
